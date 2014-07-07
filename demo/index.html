@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<title>Ticker Text demo</title>
+	</head>
+	<body data-ng-app="TickerApp" data-ng-controller="TickerController">
+		<div data-ng-view></div>
+		
+		<script src="js/jquery-1.10.2.min.js"></script>
+		<script src="js/angular.min.js"></script>
+		<script src="js/angular-sanitize.min.js"></script>
+
+		<script src="js/app.js"></script>
+		<script src="js/directive/ticker-text.js"></script>
+		
+		<data-ticker-text data="items" behaviour="scroll" show-date="true"></data-ticker-text>
+	</body>
+</html>
