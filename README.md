@@ -42,4 +42,5 @@ $scope.items = [{ info : 'Whatever' }, { info : 'more whatever' }];
  - To have this working 'out of the box' make sure to include the angular sanitze script files:
  ```html
  <script src=".../angular-sanitize.js"></script>
+ ```
  - This allows the safe output of the html that is built in the directive.
