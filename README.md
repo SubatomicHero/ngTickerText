@@ -36,4 +36,10 @@ $scope.items = [{ info : 'Whatever' }, { info : 'more whatever' }];
  - 'spaceCount': spaces between each element (Keep this number even).
  - 'showDate' : TRUE/FALSE whether to append the current date on to the end of the items list which is then displayed.
  - 'interval' : In seconds. How often the date object is updated and rendered onto the scrolling text.
- - NOTE: Make sure to use the partial included or use your own and alter the directive. (partials/ScrollingText.html)
+ 
+## Notes:
+ - Make sure to use the partial included or use your own and alter the directive. (partials/ScrollingText.html)
+ - To have this working 'out of the box' make sure to include the angular sanitze script files:
+ ```html
+ <script src=".../angular-sanitize.js"></script>
+ - This allows the safe output of the html that is built in the directive.
